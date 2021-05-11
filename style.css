@@ -1,0 +1,86 @@
+/* RESET */
+body, p, h1, ul, li, blockquote{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #DFDFDF;
+    font-family: 'Vollkorn', serif;
+}
+
+/* ESTILOS */
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+ul li a{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+ul li a{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    background: linear-gradient(0deg, 
+        white 0%, 
+        #ee8163 100%);
+    color: rgba(0,0,0,.7);
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    transition: .5s;
+}
+
+.fab{
+    transition: .5s;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, 
+        #ee8163 0%, 
+        white 100%);
+}
+
+ul li a:hover .fab{
+    color: #8300df;
+}
+
+a:hover{
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
