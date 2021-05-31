@@ -11,30 +11,3 @@ li{
 a{
     text-decoration: none;
 }
-
-img{
-    max-width: 100%;
-    display: block;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #302B2B;
-    font-family: 'Vollkorn', serif;
-}
-
-/* ESTILOS */
-
-@keyframes girar{
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-svg{
-    width: 25vh;
-    height: 25vh;
-}
